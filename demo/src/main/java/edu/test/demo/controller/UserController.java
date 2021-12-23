@@ -1,7 +1,6 @@
 package edu.test.demo.controller;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,13 +15,9 @@ public class UserController {
 	@Autowired
 	UserService userService;
 
-	@RequestMapping(value = "/main", method = RequestMethod.GET)
-	public List test() {
-		UserVO user1 = userService.selectUser(1);
-		UserVO user2 = userService.selectUser(2);
-		List<UserVO> userList = new ArrayList<UserVO>();
-		userList.add(user1);
-		userList.add(user2);
-		return userList;
-	}
+//	@RequestMapping(value = "/user", method = RequestMethod.GET)
+//	public List<UserVO> test() {
+//		List<UserVO> userList = userService.selectUser();
+//		return userList;
+//	}
 }

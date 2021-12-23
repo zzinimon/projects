@@ -12,18 +12,19 @@ public class UserVO {
 	private String user_email;
 	private String user_pw;
 	private String user_nickname;
-	private Boolean user_gender;
+	private int user_gender;
 	private String user_nationality;
 	private int user_age;
-	private Boolean user_smoking;
-	private Boolean user_vaccine;
-	private boolean user_room;
-	private boolean user_matching;
-	private boolean user_pet;
+	private int user_smoking;
+	private int user_vaccine;
+	private int user_room;
+	private int user_matching;
+	private int user_pet;
 	private String user_intro;
 	private String user_ideal;
 	private String user_location;
 	private String user_profile;
 	private String user_sns;
+	
 	
 }
